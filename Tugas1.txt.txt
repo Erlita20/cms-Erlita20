@@ -1,0 +1,22 @@
+Rangkuman
+GitHub merupakan aplikasi layanan berbasis website yang menyediakan
+layanan untuk menyimpan repository kode secara gratis 
+yang digunakan oleh individu dan team.
+GitHub juga tempat terbaik untuk berkolaborasi membuat suatu proyek
+dan berbagi kode dengan team.
+GitHub ini sangat membantu untuk siapa saja yang bekerja dalam team. 
+Ketika sudah membuat akun di github.com,
+langkah selanjutnya yaitu buka cmd
+kemudian masuk dengan username dan email anda
+$ git config --global user.name "nama user masing-masing"
+$ git config --global user.name "emailkamu@contoh.com"
+GitHub memiliki banyak perintah diantaranya
+- git init : perintah ini digunakan untuk membuat repository.
+- git add : perintah ini digunakan untuk menambah file ke dalam github.
+- git commit -m "initialization commit" : perintah ini digunakan untuk commit pertama 
+dan akan menjadi history setiap perubahan. 
+- git branch -M master : perintah ini digunakan untuk membuat cabang pada repository.
+- git add remote origin https://github.com/polinema-web/cms-username.git : perintah ini digunakan
+untuk menghubungkan repository lokal ke repository central. 
+- git push origin  master : perintah ini digunakan untuk memasukkan program yang sudah kita dibuat
+dan sudah tersimpah di git repository lokal ke remote. 
