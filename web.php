@@ -11,14 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return 'Selamat Datang';
+//Praktikum 1 
+/*Route::get('/',function() {
+    return'Selamat Datang';
 });
 
-Route::get('/about', function () {
-    return '1931710068-Erlita Desy Cahyuni';
+Route::get('/about',function() {
+    return'1931710068-Erlita DesyCahyuni';
 });
 
-Route::get('/articles/{id}', function ($id) {
-    return'Halaman artikel dengan id'.$id;
-});
+Route::get('/artikel/{id}',function($id) {
+    return' Halaman Artikel dengan id ' .$id;
+});*/
+Route::get('/home', 'HomeController@home');
+Route::get('/about', 'AboutController@about');
+Route::get('/article/{id}', 'ArticleController@article');
