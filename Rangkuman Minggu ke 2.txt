@@ -1,0 +1,14 @@
+Routing pada laravel merupakan jalur URL yang bisa diakses oleh pengguna aplikasi ke mana jalur itu diproses. 
+Routing dapat dianologikan seperti pintu masuk.
+memiliki sintack dasar yaitu Route::verb("/path", callback);
+Verb tersebut bisa berupa get, post, put, delete, options dan patch.
+Routing ini memiliki 4 file di dalam folder routes yaitu 
+1. api.php yang digunakan untuk web service/API
+2. channels.php yang digunakan untuk broadcast channel melalui websocket
+3. console.php yang digunakan untuk commad line
+4. web.php yang digunakan untuk web standard
+
+Controller berfungsi untuk mengorganisasi logika aplikasi menjadi lebih terstruktur.
+Controller pada laravel tersimpan di folder app/Http/Controllers.
+pada penulisan class contollernya harus sesuai dengan nama file controller
+yang sudah dibuat kemudian di extends ke controller laravel.
