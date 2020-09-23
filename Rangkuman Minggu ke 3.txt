@@ -1,0 +1,34 @@
+Rangkuman
+
+View 
+
+View merupakan bagian dari MVC yang bertanggung jawab untuk memberikan tampilan ke pada pengguna. 
+View disimpan di direktori resources/views. Laravel membuat view dengan
+memanfaatkan templating engine yang disebut blade. Karena Laravel menggunakan templating engine bawaan
+blade, maka setiap file View diakhiri dengan .blade.php. 
+
+Blade Layout, Section dan Component
+
+Layout dan Section
+
+Layout digunakan untuk membuat master view yang akan selalu ditampilkan oleh view child.
+Tempat tersebut disebut section. Pada layout, setiap kode html akan digunakan oleh child view.
+
+@yield 
+@yield("nama_section") digunakan untuk mendefinisikan bagian dari layout yang akan digunakan dan diisi
+oleh child view.
+
+@section
+digunakan untuk mendefinisikan sebuah section dan untuk mengisi section yang diharapkan oleh parent 
+view / layout melalui @yield dan diakhiri dengan @endsction.
+
+@parent
+Digunakan untuk menampilkan konten yang ada pada parent dalam section tertentu.
+
+@extends 
+Digunakan pada setiap child view yang ingin menggunakan sebuah view sebagai parent/layout.
+
+Component
+Digunakan untuk membuat view yang dapat digunakan berulang kali.
+Berbeda dengan layout yang bertindak sebagai master, component dapat
+dianggap sebagai child view yang bida dipakai di view lain.

@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     public function article($id){
-        return 'Halaman artikel id '.$id;
+    	return view('ArticleController',compact('id'));
     }
 }
